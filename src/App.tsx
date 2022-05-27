@@ -6,7 +6,7 @@ const App = () => {
 
     return (
 
-        <Button>Send</Button>
+        <Button size="medium" theme="primary">Send</Button>
 
     );
 }
