@@ -1,7 +1,9 @@
-import React, { FC } from 'react';
+import React, { FC, MouseEventHandler } from 'react';
 import styled from 'styled-components';
 
 interface ButtonProps {
+	disabled?: boolean,
+	onClick?: MouseEventHandler<HTMLButtonElement>
 	children: string
 };
 
@@ -9,10 +11,10 @@ const StyledButton = styled.button<ButtonProps>`
 	display: inline-block;
 `;
 
-const Button: FC<ButtonProps> = ({ children }) => {
+const Button: FC<ButtonProps> = ({ disabled, children, onClick, ...props }) => {
 
 	return (
-		<StyledButton>{children}</StyledButton>
+		<StyledButton onClick={onClick} disabled={disabled} {...props}>{children}</StyledButton>
 	)
 };
 
