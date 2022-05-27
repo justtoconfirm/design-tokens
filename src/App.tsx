@@ -1,10 +1,12 @@
 import React from 'react';
 
+import Button from './components/Button/';
+
 const App = () => {
 
     return (
 
-        <h1>Hello React</h1>
+        <Button>Send</Button>
 
     );
 }

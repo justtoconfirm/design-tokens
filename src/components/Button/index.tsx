@@ -1,13 +1,13 @@
 import React, { FC } from 'react';
 
-export interface ButtonProps {
-	text?: string
+interface ButtonProps {
+	children: string
 }
 
-const Button: FC<ButtonProps> = () => {
+const Button: FC<ButtonProps> = ({ children }) => {
 
 	return (
-		<button>{text}</button>
+		<button>{children}</button>
 	)
 }
 
