@@ -1,6 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
+// Import the Button component from the component library
 import Button from './index';
 
 export default {
@@ -8,8 +9,30 @@ export default {
 	component: Button,
 } as ComponentMeta<typeof Button>;
 
-export const Primary: ComponentStory<typeof Button> = () => 
-	<Button theme="primary">Button</Button>;
+// Create a template to render the component
+const Template: ComponentStory<typeof Button> = args => <Button {...args} />;
 
-export const Secondary: ComponentStory<typeof Button> = () => 
-	<Button theme="secondary">Button</Button>;
+export const Primary = Template.bind({});
+Primary.args = {
+	theme: 'primary',
+}
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+	theme: 'secondary',
+}
+
+export const Small = Template.bind({});
+Small.args = {
+	size: 'small',
+}
+
+export const Medium = Template.bind({});
+Medium.args = {
+	size: 'medium',
+}
+
+export const Large = Template.bind({});
+Large.args = {
+	size: 'large',
+}
