@@ -1,9 +1,9 @@
-import React, { FC, MouseEventHandler } from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 
 interface ButtonProps {
 	disabled?: boolean,
-	onClick?: MouseEventHandler<HTMLButtonElement>,
+	onClick?: () => void,
 	theme?: "primary" | "secondary",
 	size?: "small" | "medium" | "large",
 	children: string
@@ -16,10 +16,10 @@ const StyledButton = styled.button<ButtonProps>`
 	padding: ${props => props.size === "small"? "3rem 2rem" : (props.size === "medium"? "6rem 4rem" : "12rem 8rem")};
 `;
 
-const Button: FC<ButtonProps> = ({ disabled, children, onClick, theme, size, ...props }) => {
+const Button: FC<ButtonProps> = ({ disabled, children, onClick, theme, size = "medium", ...props }) => {
 
 	return (
-		<StyledButton onClick={onClick} disabled={disabled} theme={theme} size={size} {...props}>{children}</StyledButton>
+		<StyledButton type="button" {...props}>{children}</StyledButton>
 	)
 };
 
