@@ -16,10 +16,10 @@ const StyledButton = styled.button<ButtonProps>`
 	padding: ${props => props.size === "small"? "3rem 2rem" : (props.size === "medium"? "6rem 4rem" : "12rem 8rem")};
 `;
 
-const Button: FC<ButtonProps> = ({ disabled, children, onClick, theme, size = "medium", ...props }) => {
+const Button: FC<ButtonProps> = ({ disabled, children, onClick, theme, size, ...props }) => {
 
 	return (
-		<StyledButton type="button" {...props}>{children}</StyledButton>
+		<StyledButton type="button" onClick={onClick} disabled={disabled} theme={theme} size={size} {...props}>{children}</StyledButton>
 	)
 };
 
