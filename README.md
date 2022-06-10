@@ -44,3 +44,21 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Figma API
+
+```javascript
+async function getFigmaObjTree(figmaApiKey, figmaId) {
+	let result = await fetch("https://api.figma.com/v1/files/" + figmaId, {
+		method: "GET",
+		headers: {
+			"X-Figma-Token": figmaApiKey
+		}
+	});
+
+	let figmaTreeStructure = await result.json();
+	console.log(figmaTreeStructure);
+}
+
+getFigmaObjTree(`AUTH_TOKEN_HERE`, ID_FOUND_IN_URL_HERE);
+````
