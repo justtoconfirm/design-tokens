@@ -11,7 +11,10 @@ const App = () => {
 
     return (
 
-        <Button size="medium" theme="primary">Send</Button>
+        <>
+            <Button size="small" theme="morethan">Continue</Button>
+            <Button size="small" theme="ms">Continue</Button>
+        </>
 
     );
 }
