@@ -1,7 +1,7 @@
 {
   "global": {
     "tesco_blue": {
-      "value": "#0000ff",
+      "value": "#00ffff",
       "type": "color",
       "description": "Tesco Primary Brand"
     }
