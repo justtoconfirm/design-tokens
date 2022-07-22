@@ -9,6 +9,11 @@
       "value": "#eee",
       "type": "color",
       "description": "Grey"
+    },
+    "Test": {
+      "value": "#fff",
+      "type": "color",
+      "description": "Test"
     }
   },
   "$themes": []
