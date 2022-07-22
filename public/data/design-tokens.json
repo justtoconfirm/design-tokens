@@ -5,10 +5,10 @@
       "type": "color",
       "description": "Tesco Primary Brand"
     },
-    "black": {
-      "value": "#000",
+    "grey": {
+      "value": "#eee",
       "type": "color",
-      "description": "Black"
+      "description": "Grey"
     }
   },
   "$themes": []
