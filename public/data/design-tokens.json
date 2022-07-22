@@ -14,6 +14,17 @@
       "value": "#fff",
       "type": "color",
       "description": "Test"
+    },
+    "Large": {
+      "value": "4px",
+      "type": "borderRadius",
+      "description": "Large Border Radius"
+    },
+    "largeFont": {
+      "value": {
+        "fontSize": "1.6rem"
+      },
+      "type": "typography"
     }
   },
   "Tesco": {
