@@ -16,5 +16,12 @@
       "description": "Test"
     }
   },
+  "Tesco": {
+    "tescoPrimary": {
+      "value": "#000fff",
+      "type": "color",
+      "description": "Tesco Primary Blue"
+    }
+  },
   "$themes": []
 }
