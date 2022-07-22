@@ -4,6 +4,11 @@
       "value": "#00ffff",
       "type": "color",
       "description": "Tesco Primary Brand"
+    },
+    "black": {
+      "value": "#000",
+      "type": "color",
+      "description": "Black"
     }
   },
   "$themes": []
